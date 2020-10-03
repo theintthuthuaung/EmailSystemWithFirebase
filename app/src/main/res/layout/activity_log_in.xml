@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AD58BC">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20pt"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Log in to your account"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/emal_et_login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#fff"
+        android:ems="10"
+        android:hint="email@gmail.com"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#555" />
+
+    <EditText
+        android:id="@+id/pwd_et_login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emal_et_login"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#fff"
+        android:ems="10"
+        android:hint="Enter the password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#555" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/login_btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#037167"
+            android:text="Log In"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/signup_btn_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#B5180C"
+            android:text="Sign UP"
+            android:textColor="#FFF" />
+    </LinearLayout>
+
+</RelativeLayout>

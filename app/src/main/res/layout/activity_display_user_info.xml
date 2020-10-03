@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8BC34A"
+    tools:context=".DisplayUserInfo">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20pt"
+        android:layout_marginLeft="20pt"
+        android:layout_marginTop="20pt"
+        android:layout_marginEnd="20pt"
+        android:layout_marginRight="20pt"
+        android:layout_marginBottom="20pt"
+        android:text="Your profile information"
+        android:textColor="#000"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/displayFirstName_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="First Name"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textColorHint="#393838" />
+
+        <TextView
+            android:id="@+id/displayLastName_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="Last name"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textColorHint="#393838" />
+
+        <TextView
+            android:id="@+id/displayUserName_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="User Name"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textColorHint="#393838" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#CA443B"
+            android:onClick="change"
+            android:text="Chang Email"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#DF4E7F"
+            android:onClick="update"
+            android:text="Update Profile"
+            android:textColor="#000" />
+    </LinearLayout>
+</RelativeLayout>

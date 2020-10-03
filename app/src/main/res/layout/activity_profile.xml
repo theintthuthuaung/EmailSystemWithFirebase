@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3953E1"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20pt"
+        android:text="Fill your profile information"
+        android:textColor="#000"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/profile_firstName_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:ems="10"
+            android:hint="Enter first name"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/profile_lastName_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:ems="10"
+            android:hint="Enter last name"
+            android:inputType="textPersonName"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/profile_userName_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:ems="10"
+            android:hint="Enter user name"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/applyInfo_btn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#fff"
+            android:text="Apply"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+</RelativeLayout>

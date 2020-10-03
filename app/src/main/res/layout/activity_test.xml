@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:onClick="changeEmail"
+    android:padding="15dp"
+    tools:context=".TestActivity">
+
+    <Button
+        android:id="@+id/upload_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/displayInfo_btn"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:background="#2196F3"
+        android:onClick="upload"
+        android:padding="10dp"
+        android:text="Upload" />
+
+    <Button
+        android:id="@+id/changeEmail_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#2196F3"
+        android:onClick="changeEmail"
+        android:padding="10dp"
+        android:text="Change Email"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/addProfile_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/changeEmail_btn"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:background="#2196F3"
+        android:onClick="profile"
+        android:padding="10dp"
+        android:text="Update Profile"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/displayInfo_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/changeEmail_btn"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="#2196F3"
+        android:onClick="info"
+        android:padding="10dp"
+        android:text="Info"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+</RelativeLayout>
